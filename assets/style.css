@@ -37,7 +37,6 @@ header.site-header {
 }
 
 header.site-header .header-inner {
-  position: relative;
   max-width: var(--max);
   margin: 0 auto;
   padding: 1.25rem 1rem 1.25rem;
@@ -107,7 +106,7 @@ nav.site-nav .nav-inner {
   gap: 1.75rem;
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0.65rem 1rem;
+  padding: 0.65rem 1rem 0.65rem 300px;
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.03em;
