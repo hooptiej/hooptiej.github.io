@@ -62,16 +62,20 @@ header.site-header .header-brand {
 header.site-header h1 {
   margin: 0;
   line-height: 0;
+  text-align: left;
 }
 
 header.site-header h1 img.title-wordmark {
+  display: block;
   max-width: 480px;
   width: 100%;
   height: auto;
+  margin: 0 0 0 -22px;
 }
 
 header.site-header p.site-subtitle {
-  margin: 0.4rem 0 0;
+  margin: -1.3rem 0 0;
+  text-align: left;
   font-family: 'Orbitron', -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   font-size: 1.05rem;
   font-weight: 600;
@@ -80,12 +84,13 @@ header.site-header p.site-subtitle {
 }
 
 header.site-header p.tagline {
-  margin: 0.4rem 0 0;
+  margin: 0.1rem 0 0;
+  text-align: left;
   color: var(--muted);
   font-family: 'Caveat', cursive;
   font-size: 1.7rem;
   font-weight: 600;
-  transform: rotate(-1.5deg);
+  transform: rotate(-4deg);
   transform-origin: left center;
 }
 
