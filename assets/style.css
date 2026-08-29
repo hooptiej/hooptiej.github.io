@@ -70,7 +70,8 @@ header.site-header h1 img.title-wordmark {
   max-width: 480px;
   width: 100%;
   height: auto;
-  margin: 0 0 0 -22px;
+  margin: 0;
+  transform: translateX(-8.51%);
 }
 
 header.site-header p.site-subtitle {
