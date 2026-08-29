@@ -244,3 +244,25 @@ footer.site-footer {
 }
 
 .back-link { display: inline-block; margin-top: 2rem; }
+
+/* Home page grid */
+.home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (max-width: 680px) {
+  .home-grid { grid-template-columns: 1fr; }
+}
+
+.spotlight { border-color: var(--accent2); }
+.spotlight h2 { color: var(--accent2); }
+.spotlight .thumb-wide {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.spotlight .view-count { color: var(--muted); font-size: 0.85rem; margin-top: 0.4rem; }
