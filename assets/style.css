@@ -33,29 +33,31 @@ h1 {
 header.site-header {
   position: relative;
   background: var(--bg-alt);
-  overflow: hidden;
+  overflow: visible;
 }
 
 header.site-header .header-inner {
+  position: relative;
   max-width: var(--max);
   margin: 0 auto;
-  padding: 1.5rem 1rem 1.25rem;
-  display: flex;
-  align-items: center;
-  gap: 1.1rem;
-  flex-wrap: wrap;
+  padding: 1.25rem 1rem 1.25rem;
 }
 
 header.site-header .logo-mark {
-  width: 120px;
+  position: absolute;
+  top: -0.5rem;
+  left: 1rem;
+  width: 320px;
   height: auto;
-  flex-shrink: 0;
-  filter: drop-shadow(0 0 6px rgba(124,252,0,0.15));
+  z-index: 5;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5)) drop-shadow(0 0 10px rgba(124,252,0,0.2));
 }
 
 header.site-header .header-brand {
   text-align: left;
   min-width: 0;
+  margin-left: 260px;
 }
 
 header.site-header h1 {
@@ -64,9 +66,9 @@ header.site-header h1 {
 }
 
 header.site-header h1 img.title-wordmark {
-  max-width: 420px;
-  width: auto;
-  height: 92px;
+  max-width: 480px;
+  width: 100%;
+  height: auto;
 }
 
 header.site-header p.site-subtitle {
@@ -94,6 +96,12 @@ header.site-header p.tagline em {
 }
 
 nav.site-nav {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  border-bottom: 3px solid var(--accent);
+}
+
+nav.site-nav .nav-inner {
   display: flex;
   justify-content: flex-start;
   gap: 1.75rem;
@@ -103,9 +111,6 @@ nav.site-nav {
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.03em;
-  background: var(--bg);
-  border-top: 1px solid var(--border);
-  border-bottom: 3px solid var(--accent);
 }
 
 nav.site-nav a { color: var(--fg); }
