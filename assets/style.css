@@ -42,14 +42,18 @@ header.site-header .header-inner {
   padding: 1.25rem 1rem 1.25rem;
 }
 
-header.site-header .logo-mark {
+header.site-header .logo-link {
   position: absolute;
   top: -0.5rem;
   left: 1rem;
+  z-index: 5;
+  display: block;
+}
+
+header.site-header .logo-mark {
   width: 320px;
   height: auto;
-  z-index: 5;
-  pointer-events: none;
+  display: block;
   filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5)) drop-shadow(0 0 10px rgba(124,252,0,0.2));
 }
 
